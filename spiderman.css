@@ -1,0 +1,155 @@
+.spiderman-page {
+
+    width:
+        min(1200px, calc(100% - 60px));
+
+    margin:
+        60px auto;
+}
+
+
+.spider-hero {
+
+    min-height:
+        550px;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    padding:
+        50px;
+
+    border-radius:
+        30px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.92),
+            rgba(0,0,0,.3)
+        ),
+
+        url("./spiderman-bg.jpg")
+        center / cover
+        no-repeat;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.spider-hero h1 {
+
+    font-size:
+        clamp(55px,10vw,120px);
+
+    line-height:
+        .85;
+
+    letter-spacing:
+        -6px;
+}
+
+
+.spider-hero p {
+
+    color:
+        #ccc;
+
+    margin-top:
+        15px;
+}
+
+
+.spider-cards {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        20px;
+}
+
+
+.spider-card {
+
+    padding:
+        30px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(0,0,0,.6);
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.spider-card h2 {
+
+    color:
+        #ff2020;
+}
+
+
+.spider-card p {
+
+    margin-top:
+        10px;
+
+    color:
+        #999;
+
+    line-height:
+        1.6;
+}
+
+
+@media (max-width: 750px) {
+
+    .spiderman-page {
+
+        width:
+            calc(100% - 24px);
+
+        margin:
+            45px auto;
+    }
+
+
+    .spider-hero {
+
+        min-height:
+            430px;
+
+        padding:
+            25px;
+
+        border-radius:
+            20px;
+
+        background-position:
+            center;
+    }
+
+
+    .spider-cards {
+
+        grid-template-columns:
+            1fr;
+    }
+}

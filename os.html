@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM OS</title>
+
+    <link rel="stylesheet" href="os.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+    <div class="scanlines"></div>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <div class="brand">
+            NAZAM<span>.</span>
+        </div>
+
+        <div class="system-title">
+            NAZAM OS // PERSONAL SYSTEM
+        </div>
+
+        <!-- HOME BUTTON -->
+        <a href="index.html" class="home-btn">
+            ← HOME
+        </a>
+
+        <div class="clock" id="clock">
+            00:00:00
+        </div>
+
+    </header>
+
+
+    <!-- HUD -->
+    <div class="hud">
+
+        <div>
+            <span class="dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <div>
+            TKJ // CORE
+        </div>
+
+        <div>
+            SECURE CONNECTION
+        </div>
+
+        <div>
+            127.0.0.1
+        </div>
+
+    </div>
+
+
+    <!-- MAIN SYSTEM -->
+    <main class="system">
+
+        <!-- ORBITS -->
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-middle"></div>
+        <div class="orbit orbit-inner"></div>
+
+        <!-- CONNECTION LINES -->
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+        <div class="line line-6"></div>
+
+
+        <!-- CORE -->
+        <div class="core" id="core">
+
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <div class="ring ring-three"></div>
+
+            <div class="core-center">
+
+                <div class="spider-icon">
+                    🕷
+                </div>
+
+                <div class="core-name">
+                    NAZAM
+                </div>
+
+                <div class="core-status">
+                    SYSTEM ONLINE
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+        <button class="node node-about"
+                data-window="aboutWindow">
+
+            <div class="node-circle">
+                👤
+            </div>
+
+            <span>ABOUT ME</span>
+
+        </button>
+
+
+        <!-- MUSIC -->
+        <button class="node node-music"
+                data-window="musicWindow">
+
+            <div class="node-circle">
+                🎵
+            </div>
+
+            <span>MUSIC</span>
+
+        </button>
+
+
+        <!-- PROJECTS -->
+        <button class="node node-projects"
+                data-window="projectsWindow">
+
+            <div class="node-circle">
+                💻
+            </div>
+
+            <span>PROJECTS</span>
+
+        </button>
+
+
+        <!-- ARCADE -->
+        <button class="node node-arcade"
+                data-window="arcadeWindow">
+
+            <div class="node-circle">
+                🎮
+            </div>
+
+            <span>ARCADE</span>
+
+        </button>
+
+
+        <!-- TERMINAL -->
+        <button class="node node-terminal"
+                data-window="terminalWindow">
+
+            <div class="node-circle">
+                >_
+            </div>
+
+            <span>TERMINAL</span>
+
+        </button>
+
+    </main>
+
+
+    <!-- BOTTOM STATUS -->
+    <div class="bottom-status">
+        <span>NAZAM OS v1.0</span>
+        <span>TKJ SYSTEM</span>
+        <span>ALL SYSTEMS OPERATIONAL</span>
+    </div>
+
+
+    <!-- =========================
+         ABOUT WINDOW
+    ========================== -->
+
+    <div class="window" id="aboutWindow">
+
+        <button class="close">
+            ×
+        </button>
+
+        <div class="window-title">
+            ABOUT ME
+        </div>
+
+        <div class="window-content">
+
+            <h2>NAZAM ROYIBA</h2>
+
+            <p>
+                Pelajar SMKN 1 Jakarta yang tertarik
+                dengan dunia teknologi, komputer,
+                desain, dan pembuatan website.
+            </p>
+
+            <div class="info-line">
+                STATUS : STUDENT
+            </div>
+
+            <div class="info-line">
+                MAJOR : TKJ
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MUSIC WINDOW
+    ========================== -->
+
+    <div class="window music-window" id="musicWindow">
+
+        <button class="close">
+            ×
+        </button>
+
+        <div class="window-title">
+            MY MUSIC
+        </div>
+
+        <div class="music-content">
+
+            <div class="disc">
+                🎵
+            </div>
+
+            <h2>BANONDARI</h2>
+
+            <p>
+                AZMY Z
+            </p>
+
+            <div class="equalizer">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <iframe
+                id="youtubePlayer"
+                width="100%"
+                height="220"
+                src=""
+                title="Banondari - Azmy Z"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PROJECTS WINDOW
+    ========================== -->
+
+    <div class="window" id="projectsWindow">
+
+        <button class="close">
+            ×
+        </button>
+
+        <div class="window-title">
+            PROJECTS
+        </div>
+
+        <div class="window-content">
+
+            <div class="project-item">
+                <strong>WEBSITE</strong>
+                <span>Personal website NAZAM.</span>
+            </div>
+
+            <div class="project-item">
+                <strong>TKJ</strong>
+                <span>Belajar komputer dan jaringan.</span>
+            </div>
+
+            <div class="project-item">
+                <strong>GAME</strong>
+                <span>Eksperimen membuat game.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         ARCADE WINDOW
+    ========================== -->
+
+    <div class="window arcade-window" id="arcadeWindow">
+
+        <button class="close">
+            ×
+        </button>
+
+        <div class="window-title">
+            ARCADE
+        </div>
+
+        <div class="game-info">
+
+            <div>
+                SCORE
+                <strong id="score">000</strong>
+            </div>
+
+            <div>
+                TIME
+                <strong id="gameTime">10</strong>
+            </div>
+
+        </div>
+
+        <div class="game-area" id="gameArea">
+
+            <button id="target">
+                +
+            </button>
+
+            <div class="game-message" id="gameMessage">
+                CLICK START
+            </div>
+
+        </div>
+
+        <button class="start-game" id="startGame">
+            START GAME
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         TERMINAL WINDOW
+    ========================== -->
+
+    <div class="window terminal-window" id="terminalWindow">
+
+        <button class="close">
+            ×
+        </button>
+
+        <div class="window-title">
+            TERMINAL
+        </div>
+
+        <div class="terminal-body">
+
+            <div>> NAZAM OS TERMINAL</div>
+            <div>> initializing...</div>
+            <div>> loading TKJ core...</div>
+            <div>> system ready.</div>
+            <div class="success">
+                > CONNECTION ESTABLISHED ✓
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="os.js"></script>
+
+</body>
+</html>
