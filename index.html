@@ -4,70 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NAZAM. | Home</title>
+    <title>Portfolio — Data Diri</title>
 
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
+    <!-- Background Orb -->
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
 
-    <div class="logo">
-        NAZAM<span>.</span>
-    </div>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
 
-    <nav class="navbar">
-        <a href="index.html" class="active">HOME</a>
-        <a href="biodata.html">BIODATA</a>
-        <a href="music.html">MUSIC</a>
-        <a href="funfacts.html">FUN FACTS</a>
-        <a href="random.html">RANDOM</a>
-        <a href="spiderman.html">SPIDER-MAN</a>
-        <a href="experiment.html">LAB</a>
-        <a href="os.html">NAZAM OS</a>
-    </nav>
+        <a class="brand" href="#home">
+            ✦ PORTFOLIO
+        </a>
 
-</header>
+        <nav>
+            <a href="#about">Tentang</a>
+            <a href="#education">Pendidikan</a>
+            <a href="#achievements">Prestasi</a>
+        </nav>
+
+        <a class="nav-btn" href="#contact">
+            Kontak ↗
+        </a>
+
+    </header>
 
 
-<main class="home">
+    <!-- ================= HERO ================= -->
+    <section class="hero reveal" id="home">
 
-    <section class="home-hero">
+        <div class="hero-copy">
 
-        <div class="home-text">
-
-            <p class="small-text">
-                WELCOME TO MY WEBSITE
-            </p>
+            <div class="eyebrow">
+                <span></span>
+                PERSONAL PROFILE
+            </div>
 
             <h1>
-                NAZAM<br>
-                <span>ROYIBA.</span>
+                Halo, saya<br>
+                <em id="heroName">Nazam Royiba</em>
+                <sup>✦</sup>
             </h1>
 
-            <p class="home-description">
-                Personal website sederhana yang berisi tentang
-                biodata, hobi, musik, fakta random, dan hal-hal
-                yang aku suka.
+            <p class="hero-text">
+                Mengenal lebih dekat perjalanan, pendidikan,
+                dan pencapaian yang membentuk diri saya hingga hari ini.
             </p>
 
-            <a href="biodata.html" class="bio-button">
-                LIHAT BIODATA
-                <span>→</span>
-            </a>
+            <div class="hero-actions">
+
+                <a href="#about" class="primary-btn">
+                    Kenali Saya ↓
+                </a>
+
+                <a href="#achievements" class="text-btn">
+                    Lihat Prestasi ↗
+                </a>
+
+            </div>
 
         </div>
 
 
-        <div class="home-image">
+        <div class="hero-visual">
 
-            <div class="image-frame">
+            <div class="photo-frame">
 
-                <img src="image.png" alt="Foto Nazam">
+                <img
+                    id="profilePhoto"
+                    src="foto.jpg"
+                    alt="Foto profil"
+                >
 
-                <div class="image-label">
-                    NAZAM ROYIBA
+                <div class="floating-card">
+
+                    <span class="mini-label">
+                        CURRENTLY
+                    </span>
+
+                    <strong id="currentSchool">
+                        SMK
+                    </strong>
+
+                    <small id="currentMajor">
+                        Jurusan
+                    </small>
+
+                </div>
+
+
+                <div class="year-badge">
+                    20<br>
+                    <b>26</b>
                 </div>
 
             </div>
@@ -77,29 +117,270 @@
     </section>
 
 
-    <section class="home-bottom">
+    <!-- ================= STATS ================= -->
+    <section class="stats reveal" id="about">
 
-        <div>
-            <span>01</span>
-            PERSONAL
+        <div class="stat-box">
+
+            <span class="stat-number" id="age">
+                15
+            </span>
+
+            <span class="stat-unit">
+                tahun
+            </span>
+
+            <p>
+                Usia saat ini
+            </p>
+
         </div>
 
-        <div>
-            <span>02</span>
-            CREATIVE
+
+        <div class="stat-box">
+
+            <span class="stat-number" id="achievementCount">
+                05
+            </span>
+
+            <span class="stat-unit">
+                +
+            </span>
+
+            <p>
+                Pencapaian
+            </p>
+
         </div>
 
-        <div>
-            <span>03</span>
-            TECHNOLOGY
+
+        <div class="stat-box">
+
+            <span class="stat-number">
+                01
+            </span>
+
+            <span class="stat-unit">
+                ×
+            </span>
+
+            <p>
+                Personal Journey
+            </p>
+
+        </div>
+
+
+        <div class="quote-stat">
+
+            <span>
+                “
+            </span>
+
+            <p>
+                Terus tumbuh,<br>
+                terus melangkah.
+            </p>
+
         </div>
 
     </section>
 
-</main>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section section-pad reveal">
+
+        <div class="section-kicker">
+            01 / TENTANG SAYA
+        </div>
 
 
-<script src="script.js"></script>
+        <div class="about-grid">
+
+            <h2>
+                Seseorang yang<br>
+                <span>selalu ingin berkembang.</span>
+            </h2>
+
+
+            <div class="about-content">
+
+                <p id="bio">
+                    Saya adalah pribadi yang memiliki rasa ingin tahu tinggi,
+                    senang mempelajari hal baru, dan terus berusaha memberikan
+                    hasil terbaik dalam setiap proses yang dijalani.
+                </p>
+
+
+                <div class="identity">
+
+                    <div>
+                        <span>NAMA LENGKAP</span>
+                        <strong id="fullName">
+                            Nazam Royiba
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>UMUR</span>
+                        <strong id="ageDetail">
+                            16 Tahun
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>ASAL SEKOLAH</span>
+                        <strong id="schoolDetail">
+                            SMKN 1 JAKARTA
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>JURUSAN</span>
+                        <strong id="majorDetail">
+                            TKJ
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+    <section
+        class="education section-pad reveal"
+        id="education"
+    >
+
+        <div class="section-kicker">
+            02 / PERJALANAN PENDIDIKAN
+        </div>
+
+
+        <div class="section-heading">
+
+            <h2>
+                Dari langkah pertama<br>
+                hingga <span>sekarang.</span>
+            </h2>
+
+            <p>
+                Setiap jenjang menjadi bagian dari cerita
+                yang membentuk saya.
+            </p>
+
+        </div>
+
+
+        <div
+            class="timeline"
+            id="timeline"
+        ></div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section
+        class="achievements section-pad reveal"
+        id="achievements"
+    >
+
+        <div class="section-kicker">
+            03 / PRESTASI & PENCAPAIAN
+        </div>
+
+
+        <div class="achievement-head">
+
+            <h2>
+                Hal-hal yang<br>
+                <span>pernah saya raih.</span>
+            </h2>
+
+            <p>
+                Beberapa pencapaian yang menjadi bagian
+                dari proses belajar dan berkembang.
+            </p>
+
+        </div>
+
+
+        <div
+            class="achievement-list"
+            id="achievementList"
+        ></div>
+
+    </section>
+
+
+    <!-- ================= CLOSING ================= -->
+    <section
+        class="closing section-pad reveal"
+        id="contact"
+    >
+
+        <div class="closing-mark">
+            ✦
+        </div>
+
+
+        <div>
+
+            <span class="section-kicker">
+                LET'S CONNECT
+            </span>
+
+            <h2>
+                Terima kasih sudah<br>
+                <span>berkunjung.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="closing-meta">
+
+            <p>
+                PERSONAL PORTFOLIO
+            </p>
+
+            <strong id="contactName">
+                NNazam Royiba
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <span>
+            © 2026
+            <b id="footerName">
+                Nazam Royiba
+            </b>
+        </span>
+
+        <span>
+            Made with curiosity ✦
+        </span>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
